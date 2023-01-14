@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twstudy</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- links google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fascinate&family=Kdam+Thmor+Pro&family=Nuosu+SIL&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- start style-switcher -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <h3 class="fs-5 text-capitalize">style switcher</h3>
+        <div class="style-switcher-item mt-4">
+            <h4 class="text-capitalize fs-5 fw-normal">theme colors</h4>
+            <div class="theme-colors">
+                <button type="button" data-color="#fa5353" class="color-1 rounded-circle"></button>
+                <button type="button" data-color="#526ae5" class="color-2 rounded-circle"></button>
+                <button type="button" data-color="#e5aa52" class="color-3 rounded-circle"></button>
+                <button type="button" data-color="#ad52e5" class="color-4 rounded-circle"></button>
+                <button type="button" data-color="#52e5be" class="color-5 rounded-circle"></button>
+            </div>
+        </div>
+        <div class="style-switcher-item py-3">
+            <div class="form-check form-switch">
+                <input class="form-check-input js-darkMode" onclick="changeStatus()" type="checkbox" id="dark-mode">
+                <label class="form-check-label text-capitalize" for="dark-mode">dark mode</label>
+            </div>
+        </div>
+    </div>
+    <!-- end style-switcher -->
+
+
+
+
+    <!-- start header -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>tws</span>tudy</a>
+
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">courses <i class="fa-solid fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="courses.html">course</a></li>
+                            <li><a class="dropdown-item" href="course-details.html">course details</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">pages <i class="fa-solid fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="log-in.html">log in</a></li>
+                            <li><a class="dropdown-item" href="sign-out.html">sign out</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="logIn.html">log in</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end header -->
+
+
+
+
+
+
+
+
+    <!-- start banner -->
+    <div class="banner d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <div class="banner-text">
+                        <h4>An investment in knowledge pays the best interest.</h4>
+                        <h1>best online platform for learning.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam nemo sit dolorum suscipit enim.</p>
+                        <a href="#" class="btn btn-theme">join for free</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="banner-img">
+                        <div class="circular-img">
+                            <div class="circular-img-inner">
+                                <div class="circular-img-circle"></div>
+                                <img src="img/banner-img.png" alt="banner img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+
+
+
+
+
+
+
+
+    <!-- start fun-facts-section -->
+    <div class="fun-facts text-center text-uppercase">
+        <div class="container bg-white">
+            <div class="box py-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 media-lg">
+                        <h1 class="fs-2 fw-bold style-1">880k</h1>
+                        <p>students we've</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 media-lg">
+                        <h1 class="fs-2 fw-bold style-2">500+</h1>
+                        <p>courses</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <h1 class="fs-2 fw-bold style-3">50+</h1>
+                        <p>countrise</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 media-md">
+                        <h1 class="fs-2 fw-bold style-4">100+</h1>
+                        <p>skilled instructors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end fun-facts-section -->
+
+
+
+
+
+
+
+
+    <!-- start courses-section -->
+    <div class="courses">
+        <div class="container">
+            <div class="courses-title text-center pb-3">
+                <p class="text-capitalize fs-4">courses</p>
+                <h2 class="text-capitalize fw-bold">find the right course for you</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 16rem;">
+                        <a href="course-details.html">
+                            <img src="img/courses/web-development/1.jpg" class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">html for beginners</h5>
+                                <p class="card-text"><img src="img/instructor/1.png" style="width: 45px;"> <span class="ms-3">john doe</span></p>
+                                <div class="ratimg">
+                                    <span class="avrrage-rating">(4.5)</span>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star-half"></i>
+                                    <span class="reviews">(230)</span>
+                                    <span class="price text-white p-1 rounded">$ 49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 16rem;">
+                        <a href="course-details.html">
+                            <img src="img/courses/web-development/2.jpg" class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">css for beginners</h5>
+                                <p class="card-text"><img src="img/instructor/1.png" style="width: 45px;"> <span class="ms-3">john doe</span></p>
+                                <div class="ratimg">
+                                    <span class="avrrage-rating">(4.5)</span>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star-half"></i>
+                                    <span class="reciews">(230)</span>
+                                    <span class="price text-white p-1 rounded">$ 49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 16rem;">
+                        <a href="course-details.html">
+                            <img src="img/courses/web-development/3.jpg" class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">javaScript for beginners</h5>
+                                <p class="card-text"><img src="img/instructor/1.png" style="width: 45px;"> <span class="ms-3">john doe</span></p>
+                                <div class="ratimg">
+                                    <span class="avrrage-rating">(4.5)</span>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star-half"></i>
+                                    <span class="reciews">(230)</span>
+                                    <span class="price text-white p-1 rounded">$ 49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 16rem;">
+                        <a href="course-details.html">
+                            <img src="img/courses/web-development/4.jpg" class="card-img-top rounded" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">php for beginners</h5>
+                                <p class="card-text"><img src="img/instructor/1.png" style="width: 45px;"> <span class="ms-3">john doe</span></p>
+                                <div class="ratimg">
+                                    <span class="avrrage-rating">(4.5)</span>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star"></i>
+                                    <i class="fa-solid fa fa-star-half"></i>
+                                    <span class="reciews">(230)</span>
+                                    <span class="price text-white p-1 rounded">$ 49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="botton text-center mt-5">
+                <a href="courses.html" class="btn btn-theme">view all courses</a>
+            </div>
+        </div>
+    </div>
+    <!-- end courses-section -->
+
+
+
+
+
+
+    <!-- start testimonial-sectio -->
+    <div class="testimonial">
+        <div class="container">
+            <div class="testimonial-title text-center pb-3">
+                <p class="text-capitalize fs-4">students feedback</p>
+                <h2 class="text-capitalize fw-bold">what out student say</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 ">
+
+                    <div id="carouselExampleInterval" class="carousel slide text-center" data-bs-ride="carousel">
+                        <div class="carousel-inner mb-3">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="img-box rounded-circle">
+                                    <img src="img/testimonial/1.png" class="d-block w-100 rounded-circle" alt="...">
+                                </div>
+                                <div class="testimonial-item">
+                                    <p class="test-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste nisi eius sunt ipsum officiis labore quis ut et necessitatibus0
+                                    </p>
+                                    <h3>john doe</h3>
+                                    <p class="test-2 text-capitalize m-0">web develober</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="img-box rounded-circle">
+                                    <img src="img/testimonial/2.png" class="d-block w-100 rounded-circle" alt="...">
+                                </div>
+                                <div class="testimonial-item">
+                                    <p class="test-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste nisi eius sunt ipsum officiis labore quis ut et necessitatibus0
+                                    </p>
+                                    <h3>john doe</h3>
+                                    <p class="text-2 text-capitalize m-0">web develober</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box rounded-circle">
+                                    <img src="img/testimonial/3.png" class="d-block w-100 rounded-circle" alt="...">
+                                </div>
+                                <div class="testimonial-item">
+                                    <p class="test-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste nisi eius sunt ipsum officiis labore quis ut et necessitatibus0
+                                    </p>
+                                    <h3>john doe</h3>
+                                    <p class="test-2 text-capitalize m-0">web develober</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <i class="fa-solid fa fa-arrow-left"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <i class="fa-solid fa fa-arrow-right"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimonial-sectio -->
+
+
+
+
+
+
+    <!-- start instructor-section -->
+    <div class="instructor d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center bg-white py-4">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="instructor-img">
+                        <div class="circular-img">
+                            <div class="circular-img-inner">
+                                <div class="circular-img-circle"></div>
+                                <img src="img/bai-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="instructor-text">
+                        <p class="text-capitalize">become a instructor</p>
+                        <h1>Become a Instructor</h1>
+                        <a href="#" class="btn btn-theme">apply now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end instructor-section -->
+
+
+
+
+
+
+    <!-- start footer-section -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="footer-logo text-uppercase"><span>tws</span>tudy</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none" href="#">about</a></li>
+                                <li><a class="text-decoration-none" href="#">what we offer</a></li>
+                                <li><a class="text-decoration-none" href="#">careers</a></li>
+                                <li><a class="text-decoration-none" href="#">certificates</a></li>
+                                <li><a class="text-decoration-none" href="#">blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="text-capitalize fs-4 pb-3">learning</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none" href="#">get the app</a></li>
+                                <li><a class="text-decoration-none" href="#">testimonial</a></li>
+                                <li><a class="text-decoration-none" href="#">pricing</a></li>
+                                <li><a class="text-decoration-none" href="#">fag</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="text-capitalize fs-4 pb-3">more</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none" href="#">affiliates</a></li>
+                                <li><a class="text-decoration-none" href="#">become a course creater</a></li>
+                                <li><a class="text-decoration-none" href="#">training webinars</a></li>
+                                <li><a class="text-decoration-none" href="#">free personality test</a></li>
+                                <li><a class="text-decoration-none" href="#">help and support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="text-capitalize fs-4 pb-3">get in touch</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none" href="#"><i class="fa-brands fa fa-facebook-f"></i> facebook</a></li>
+                                <li><a class="text-decoration-none" href="#"><i class="fa-brands fa fa-twitter"></i> twitter</a></li>
+                                <li><a class="text-decoration-none" href="#"><i class="fa-brands fa fa-instagram"></i> instagram</a></li>
+                                <li><a class="text-decoration-none" href="#"><i class="fa-brands fa fa-youtube"></i> youtube</a></li>
+                                <li><a class="text-decoration-none" href="#"><i class="fa-brands fa fa-linkedin"></i> linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-capitalize text-center">
+                copyright &copy;2022 by MuhammedMostafaSalem
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+
+
+
+
+
+
+    <!-- links bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <!-- link js -->
+    <script src="js/main.js"></script>
+    <script src="js/sideBar.js"></script>
+</body>
+</html>

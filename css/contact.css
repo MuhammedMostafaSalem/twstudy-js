@@ -1,0 +1,81 @@
+.t-dark .contact-section .contact-items h2 ,
+.t-dark .contact-section .contact-items .contact-item .contact-text h3 {
+    color: var(--white-color);
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+.contact-section .contact-items .contact-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contact-section .contact-items .contact-item i  {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.contact-section .contact-items .contact-item .contact-text {
+    margin-left: 15px;
+}
+.contact-section .contact-items .contact-item .contact-text h3 {
+    font-size: 20px;
+}
+.contact-section .contact-items .contact-item .contact-text p {
+    color: rgb(124, 124, 124);
+    margin-top: -5px;
+}
+.contact-section .box {
+    margin-right: 70px;
+    border-radius: 8px;
+}
+.contact-section .box form .form-input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 10px;
+}
+.contact-section .box form .form-input-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px 0 0 10px;
+}
+.contact-section .box form .form-input-group input ,
+.contact-section .box form .form-input-group textarea {
+    border: 2px solid var(--gray-color);
+    outline: none;
+}
+.contact-section .box form .form-input-group input::placeholder ,
+.contact-section .box form .form-input-group textarea {
+    color: var(--gray-color);
+}
+.contact-section .box button {
+    border: none;
+    background-color: var(--main-color);
+}
+@media (max-width: 767px) {
+    .contact-section .container {
+        display: block !important;
+        text-align: center;
+    }
+    .contact-section .contact-items .contact-item {
+        text-align: center;
+        display: block !important;
+    }
+    .contact-section .contact-items .contact-item .contact-text {
+        margin-left: 0;
+    }
+    .contact-section .box {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+}
+
+
+footer .footer-top {
+    border-top: 1px solid var(--gray-color);
+}

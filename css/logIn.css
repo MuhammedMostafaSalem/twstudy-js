@@ -1,0 +1,58 @@
+body.t-dark .logIn-section #login .form-text a ,
+body.t-dark .logIn-section #login .form-text a>span,
+body.t-dark .logIn-section #createAccount .form-text a>span {
+    color: var(--main-color);
+}
+
+.form--hidden {
+    display: none;
+}
+
+.logIn-section form > *:first-child {
+    margin-top: 0;
+}
+.logIn-section form > *:last-child {
+    margin-bottom: 0;
+}
+.logIn-section form .form-message--error1 {
+    color: var(--main-color-2);
+}
+.logIn-section form .form-message--success {
+    color: var(--green-light-color);
+}
+.logIn-section form .form-input-group .form-input {
+    height: 40px;
+    border: 1px solid var(--gray-color);
+    transition: 0.2s;
+}
+.logIn-section form .form-input-group .form-input-error {
+    color: var(--main-color-2);
+    border-color: var(--main-color-2);
+}
+.logIn-section form .form-input-group .form-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+.logIn-section form .form__button {
+    background-color: var(--main-color);
+    border: none;
+}
+.logIn-section form .form-input-group .form__input-error-message {
+    font-size: 14px;
+    color: var(--main-color-2);
+}
+.logIn-section form .form__button:active {
+    transform: scale(0.50);
+}
+
+.logIn-section form  .form-text .form-link ,
+.logIn-section form  .form-text .form-link span {
+    color: var(--main-color-2);
+}
+
+
+
+
+footer .footer-top {
+    border-top: 1px solid var(--gray-color);
+}
